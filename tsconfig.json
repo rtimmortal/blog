@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+      "target": "es2015",
+      "module": "esnext",
+      "allowJs": true,
+      "jsx": "react",
+      "lib": ["dom", "es2015"],
+      "removeComments": false,
+      "moduleResolution": "node",
+      "noImplicitAny": true,
+      "noImplicitReturns": true,
+      "strictNullChecks": true,
+      "experimentalDecorators": true,
+      "sourceMap": true,
+      "outDir": "build",
+      "skipLibCheck": true
+    },
+    "awesomeTypescriptLoaderOptions": {
+      "useBabel": true
+    },
+    "types": [ "node" ],
+    "files": [
+      "src/index.tsx"
+    ],
+    "include": [
+      "types"
+    ],
+    "exclude": [
+      "build",
+      "node_modules"
+    ]
+  }
+  

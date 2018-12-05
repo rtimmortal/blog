@@ -1,12 +1,48 @@
 {
+  "name": "sirius",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
+    "@types/lodash-es": "^4.17.1",
+    "@types/node": "^10.12.12",
+    "@types/react": "^16.4.2",
+    "@types/react-css-modules": "^4.2.0",
+    "@types/react-dom": "^15.5.0",
+    "@types/react-ga": "^2.3.0",
+    "@types/react-intl": "^2.3.5",
+    "@types/react-loadable": "^5.3.4",
+    "@types/react-modal": "^1.6.6",
+    "@types/react-redux": "^5.0.14",
+    "@types/react-textarea-autosize": "4.0.7",
+    "@types/redux": "^3.6.0",
+    "@types/redux-actions": "^2.2.3",
+    "@types/redux-saga": "^0.10.5",
+    "@types/webpack": "^4.4.20",
+    "awesome-typescript-loader": "^5.2.1",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^1.0.1",
     "express": "^4.16.3",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
     "redux-actions": "^2.2.1",
     "redux-saga": "^0.16.0",
-    "typescript": "^3.0.1"
+    "react-css-modules": "^4.0.5",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^5.3.1",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.1",
+    "webpack": "4.27.0"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.1.2"
   }
 }
