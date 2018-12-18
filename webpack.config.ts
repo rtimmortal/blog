@@ -16,8 +16,13 @@ module.exports = {
     module: {
       rules: [
         {
-          test: /\.tsx?$/,
-          use: 'ts-loader',
+          test: /\.(ts|tsx)?$/,
+          use: [{
+            loader: 'babel-loader',
+            options: {
+              presets: ['react']
+            }
+          }],
           exclude: /node_modules/
         },
         {
@@ -41,6 +46,11 @@ module.exports = {
     output: {
       filename: '[name].js',
       path: path.resolve(__dirname, 'build')
+    },
+    devServer: {
+        contentBase: path.join(__dirname, 'build'),
+        compress: true,
+        port: 3200
     },
     plugins
   };

@@ -5,7 +5,7 @@
   "dependencies": {
     "@types/lodash-es": "^4.17.1",
     "@types/node": "^10.12.12",
-    "@types/react": "^16.4.2",
+    "@types/react": "^15.5.4",
     "@types/react-css-modules": "^4.2.0",
     "@types/react-dom": "^15.5.0",
     "@types/react-ga": "^2.3.0",
@@ -24,13 +24,13 @@
     "express": "^4.16.3",
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
+    "react": "^15.5.4",
+    "react-css-modules": "^4.0.5",
+    "react-dom": "^15.4.2",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
     "redux-actions": "^2.2.1",
     "redux-saga": "^0.16.0",
-    "react-css-modules": "^4.0.5",
     "source-map-loader": "^0.2.4",
     "style-loader": "^0.23.1",
     "ts-loader": "^5.3.1",
@@ -39,10 +39,32 @@
     "webpack": "4.27.0"
   },
   "scripts": {
-    "build": "webpack",
-    "start": "node server.js"
+    "build": "rm -rf ./build && webpack",
+    "start": "node server.js",
+    "start:dev": "rm -rf ./build && webpack && webpack-dev-server"
   },
   "devDependencies": {
-    "webpack-cli": "^3.1.2"
+    "babel": "^6.23.0",
+    "babel-core": "^6.24.1",
+    "babel-jest": "^23.0.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-import": "^1.1.1",
+    "babel-plugin-lodash": "^3.2.11",
+    "babel-plugin-react-css-modules": "^5.0.0",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "babel-runtime": "^6.23.0",
+    "koa": "^2.0.1",
+    "koa-proxy": "^0.8.0",
+    "koa-router": "^7.1.1",
+    "koa-static": "^3.0.0",
+    "koa-webpack-dev-middleware": "^1.4.4",
+    "koa-webpack-hot-middleware": "^1.0.3",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
   }
 }
