@@ -3,6 +3,7 @@ import * as ReactDom from 'react-dom';
 import * as CSSModules from 'react-css-modules';
 import { Header } from './header';
 import { on_loaded, initiate_load} from './cfg';
+import { Sidebar } from './sidebar';
 const style = require('./style.css');
 
 class MainComponent extends React.Component{
@@ -11,8 +12,7 @@ class MainComponent extends React.Component{
       <div>
         <Header/>
         <div id='body' className="body">
-          <div className='body-pic'></div>
-          <div className='body-content'> </div>
+        <Sidebar/>
         </div>
       </div>
     )

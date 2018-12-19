@@ -7,6 +7,8 @@ class IntroductionComponent extends React.Component{
   render(){
     return(
       <div id='introduction' className="introduction">
+      <div className="about">TENG TENG</div>
+      <div className="some">伪文艺切图仔</div>
       </div>
     )
   }
